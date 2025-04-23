@@ -4,9 +4,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<BorderPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aclcbukidnon.com.javafxactivity.controllers.DashboardController">
+<BorderPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aclcbukidnon.com.javafxactivity.controllers.DashboardController">
    <left>
-      <VBox prefHeight="400.0" prefWidth="187.0" style="-fx-background-color: #161616;" BorderPane.alignment="CENTER">
+      <VBox prefHeight="400.0" prefWidth="185.0" style="-fx-background-color: #161616;" BorderPane.alignment="CENTER">
          <children>
             <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#onCounterClick" prefHeight="60.0" prefWidth="1000000.0" style="-fx-background-color: royalblue;" text="Counter" textFill="WHITE">
                <font>

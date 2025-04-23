@@ -5,24 +5,20 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox
-        fx:controller="aclcbukidnon.com.javafxactivity.controllers.SplashScreenController"
-        alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-        prefHeight="400.0" prefWidth="354.0" style="-fx-background-color: #161616;"
-        xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
-    <Label text="JavaFx Activity" textFill="WHITE">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="354.0" style="-fx-background-color: yellow;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aclcbukidnon.com.javafxactivity.controllers.SplashScreenController">
+    <Label text="JavaFx Activity" textFill="#070707">
         <font>
-            <Font name="System Bold" size="29.0"/>
+            <Font name="System Bold" size="29.0" />
         </font>
     </Label>
-    <Label layoutX="151.0" layoutY="189.0" text="Computer Programming II" textFill="WHITE">
+    <Label layoutX="151.0" layoutY="189.0" text="Computer Programming II">
         <font>
-            <Font size="15.0"/>
+            <Font size="15.0" />
         </font>
     </Label>
     <ProgressBar fx:id="progressInitial" prefWidth="200.0" progress="0.0" style="-fx-accent: #0f62fe;">
         <VBox.margin>
-            <Insets top="69.0"/>
+            <Insets top="69.0" />
         </VBox.margin>
     </ProgressBar>
 </VBox>

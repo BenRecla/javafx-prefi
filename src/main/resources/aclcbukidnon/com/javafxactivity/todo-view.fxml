@@ -4,22 +4,26 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="16.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aclcbukidnon.com.javafxactivity.controllers.TodoController">
+<VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aclcbukidnon.com.javafxactivity.controllers.TodoController">
    <children>
-      <HBox prefHeight="100.0" prefWidth="200.0" spacing="16.0">
+      <HBox alignment="CENTER_LEFT" prefHeight="101.0" prefWidth="300.0" style="-fx-background-color: green;">
          <children>
-            <Button mnemonicParsing="false" onAction="#onCreateClick" prefHeight="42.0" prefWidth="135.0" style="-fx-background-color: #0f62fe;" text="CREATE" textFill="WHITE">
+
+            <!-- Button to create a new todo -->
+            <Button onAction="#onCreateClick" style="-fx-background-color: black;" text="Create Todo" textFill="WHITE">
                <font>
-                  <Font name="System Bold" size="12.0" />
-               </font>
-            </Button>
-            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#onDeleteClick" prefHeight="42.0" prefWidth="135.0" style="-fx-background-color: #0f62fe;" text="DELETE" textFill="WHITE">
+                  <Font size="14.0" />
+               </font></Button>
+            <Pane prefHeight="100.0" prefWidth="21.0" />
+
+            <!-- Button to delete the selected todo -->
+            <Button onAction="#onDeleteClick" style="-fx-background-color: black;" text="Delete Todo" textFill="WHITE">
                <font>
-                  <Font name="System Bold" size="12.0" />
-               </font>
-            </Button>
-         </children>
-      </HBox>
-      <ListView fx:id="todoList" onEditStart="#onListEdit" prefHeight="200.0" prefWidth="200.0" />
+                  <Font size="15.0" />
+               </font></Button>
+         </children></HBox>
+      <!-- Todo List -->
+      <ListView fx:id="todoList" prefHeight="200" prefWidth="300" style="-fx-background-color: gray;" />
+
    </children>
 </VBox>
